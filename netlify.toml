@@ -1,7 +1,13 @@
 [build]
-  base = "client"
-  publish = "client/dist/public"
+  # Base directory is root because vite.config.ts is there
+  base = "."
+  # Install dependencies and build
   command = "npm install && npm run build"
+  # Publish folder is the output of Vite
+  publish = "dist/public"
+  # Functions directory if you have serverless functions
+  functions = "dist/functions"
 
-[build.environment]
-  NODE_VERSION = "22"
+[dev]
+  command = "npm run dev"
+  port = 8888

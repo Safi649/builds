@@ -1,8 +1,7 @@
 [build]
-  base = "."
-  publish = "dist/public"
+  base = "client"                 # <-- set base to client
+  publish = "dist/public"         # <-- where Vite will output
   command = "npm install && npm run build"
-  functions = "dist/functions"
 
-[context.production.environment]
-  NODE_VERSION = "22"
+[functions]
+  directory = "dist/functions"    # if you have serverless functions

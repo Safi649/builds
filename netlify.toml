@@ -3,5 +3,5 @@
   publish = "client/dist/public"
   command = "npm install && npm run build"
 
-[dev]
-  framework = "vite"
+[build.environment]
+  NODE_VERSION = "22"

@@ -1,19 +1,20 @@
+// vite.config.ts
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig({
-  root: '.', // root of project
-  plugins: [react()],
+  root: '.', // project root
   build: {
-    outDir: 'dist/public', // output directory for Netlify
-    emptyOutDir: true,
+    outDir: 'dist/public', // matches Netlify publish folder
     rollupOptions: {
-      input: path.resolve(__dirname, 'index.html'), // entry file
+      input: path.resolve(__dirname, 'src/main.tsx'), // <-- your main entry
     },
   },
-  server: {
-    port: 3000,
-    open: true,
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
   },
 });

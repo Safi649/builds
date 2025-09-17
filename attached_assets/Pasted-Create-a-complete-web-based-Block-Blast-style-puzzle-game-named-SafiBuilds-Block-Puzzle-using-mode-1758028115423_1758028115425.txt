@@ -1,0 +1,68 @@
+Create a complete web-based Block Blast style puzzle game named "SafiBuilds Block Puzzle" using modern JavaScript and React. Target: Replit Game Stack (React). Deliver a production-ready repository with instructions and one-click run on Replit. Requirements:
+
+1) Project & tech
+- Use React (functional components + hooks), Vite or Create React App structure, and plain JavaScript or TypeScript (prefer JS unless TS requested).
+- Mobile-first responsive layout, optimized for touchscreen (tap & drag).
+- Build as a Progressive Web App (PWA): web app manifest, service worker, offline caching for assets, and installability.
+- Provide a clean folder structure and package.json scripts: start, build, preview.
+
+2) Gameplay
+- Grid-based block puzzle mechanics similar to Block Blast (place and clear matching blocks, combos, increasing difficulty).
+- Smooth touch and mouse controls (drag, swipe, tap-to-place).
+- Animations for placing, matching, clearing and score popups (use CSS transitions/GSAP if needed).
+- Level progression and difficulty curve.
+- Score, level, and timer (if applicable).
+- Local high-score saved in localStorage.
+
+3) Online & Auth
+- Optional Firebase integration for:
+  • Online leaderboards (Firestore)
+  • Anonymous guest play + Google Sign-In option
+  • Save user high scores
+- Include a toggle to enable/disable Firebase (so it runs without configuration).
+- Provide instructions and sample Firebase config placeholders.
+
+4) UI/UX & Branding
+- App name "SafiBuilds Block Puzzle" visible in app header and PWA manifest.
+- Modern colorful UI, easy-to-read fonts, big touch targets.
+- Screens: Home, Play, Leaderboard, Settings, About.
+- Game over modal with Play Again, Share Score (web share API), and Save to Leaderboard.
+- Light and dark theme toggle.
+
+5) Monetization & Publishing readiness
+- For web: include a placeholder area for ads (describe how to add Google AdSense or other web ad networks).
+- Include instructions for converting the PWA to an Android APK using:
+  • Bubblewrap (Trusted Web Activity) or
+  • Capacitor (Ionic) — include example commands and manifest changes.
+- Create adaptive icons and a basic icon pack (512x512, 192x192, etc.) for Play Store and manifest.
+
+6) Accessibility & Performance
+- Responsive to common screen sizes (320px–1440px).
+- Lighthouse-friendly (performance, accessibility, best practices).
+- Lazy load assets and optimize bundle size.
+
+7) Code quality & deliverables
+- Well-structured, commented, and production-ready code.
+- Provide README.md with:
+  • How to run locally on Replit
+  • How to configure Firebase (create project, add config)
+  • How to build PWA and test installability
+  • How to wrap to Android (bubblewrap/capacitor step-by-step; commands)
+  • How to prepare Play Store listing assets (icons, screenshots) and sign APK
+- Provide sample .env.example and clear steps to replace placeholder keys.
+- Provide screenshots (or generate mockups) and suggested Play Store description, short description, and 10 keywords.
+
+8) Output format
+- Deliver complete repo/folder structure in Replit with all files so I can run and export.
+- Add a "publish-ready" folder that includes required Play Store assets and a short packaging checklist.
+
+Notes:
+- If any 3rd-party packages require API keys, leave placeholder keys and document how to add them.
+- Keep default package name / web manifest name as "com.safibuilds.blockblast.web" or similar.
+- Prioritize mobile touch UX and offline-friendly play.
+
+Finish by running tests (if any) and provide final instructions to:
+1) run on Replit,
+2) test PWA install on Android,
+3) convert to APK via Bubblewrap/Capacitor, and
+4) publish to Play Store (step-by-step checklist).
